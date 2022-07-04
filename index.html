@@ -27,6 +27,7 @@
 <body>
     <!--Loader de la page-->
 
+
     <!--Header de la page (début)-->
 
     <header class="header">
@@ -35,9 +36,9 @@
             <nav class="nav-menu nav-top nav-menu-mobile" id="navbar">
 
                 <input type="checkbox" id="check">
-                <label for="check" class="checkbtn"></label>
+                <label for="check" class="checkbtn"><i class="fa-solid fa-bars"></i></label>
                 <div class="logo">
-                    <a href="#"><svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                    <a href="index.html"><svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                         width="255.000000pt" class="svg-logo" height="147.000000pt" viewBox="0 0 255.000000 147.000000"
                         preserveAspectRatio="xMidYMid meet">
                        
@@ -84,16 +85,15 @@
                        </svg></a>
                 </div>
                 <ul>
-                    <li><a href="index.html" id="">Accueil</a></li>
-                    <li><a href="#" id="">Découvrir waraniéné</a></li>
-                    <li><a href="apropos.html" id="">A propos</a></li>
-                    <a class="btn btn-primary btn-register" href="#" role="button">Se connecter</a>
+                    <li><a href="index.html" id="home">Accueil</a></li>
+                    <li><a href="#rubriques" id="discover">Découvrir waraniéné</a></li>
+                    <li><a href="apropos.html" id="about">A propos</a></li>
                 </ul>
                
             </nav>
             <div class="container-lg banner-wrapper ">
-                <div class="row d-flex justify-content-center align-items-center">
-                      <div class="col title-div">
+                <div class="row d-flex justify-content-center align-items-center ">
+                      <div class="col col-md-10 col-sm-8 title-div">
                           <h2 class="hero-subtitle">Bienvenue à</h2>
                           <h1 class="hero-bigtitle">Waraniéné</h1>
                       </div>
@@ -136,7 +136,7 @@
                 </div>
             </div>
             <div class="row py-5">
-                <div class="col">
+                <div class="col maps">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22265.429524200896!2d-5.67844654256364!3d9.420607905279264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfb5cb8d6eb7a135%3A0xb4e80c8c46f78669!2zV2FyYW5pw6luw6k!5e0!3m2!1sen!2sci!4v1656468677944!5m2!1sen!2sci" width="600" height="370" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="col">
@@ -154,7 +154,7 @@
 
         <!--Section "Rubriques" (début)-->
 
-        <section class="rubrique-section p-5">
+        <section class="rubrique-section p-5" id="rubriques">
         <div class="container p-0">
             <div class="row">
                 <div class="col p-4">
@@ -277,7 +277,7 @@
     
 </body>
 
-
+<script src="https://unpkg.com/scrollreveal"></script>
 <script src="./js/index.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <!--Bootstrap-->
@@ -288,7 +288,7 @@
 integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
 crossorigin="anonymous"></script>
 
-
+<!--Loader-->
 <script>
     $('.owl-carousel').owlCarousel({
         loop: true,

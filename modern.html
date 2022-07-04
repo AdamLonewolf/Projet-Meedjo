@@ -25,16 +25,23 @@
 
 </head>
 <body>
-    <!--Loader de la page-->
+    <!--Loader de la page début-->
+    <div class="loader">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+     </div>
+    <!--Loader de la page fin-->
 
    <!--Header start-->
    <header class="header" id="header-apropos">
     <nav class="nav-menu nav-menu-mobile" id="navbar">
 
         <input type="checkbox" id="check">
-        <label for="check" class="checkbtn"></label>
+        <label for="check" class="checkbtn"><i class="fa-solid fa-bars"></i></label>
         <div class="logo">
-            <a href="#"><svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+            <a href="index.html"><svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                 width="255.000000pt" class="svg-logo" height="147.000000pt" viewBox="0 0 255.000000 147.000000"
                 preserveAspectRatio="xMidYMid meet">
             
@@ -81,9 +88,9 @@
             </svg></a>
         </div>
         <ul>
-            <li ><a href="index.html" id="">Accueil</a></li>
-            <li><a href="#" id="">Découvrir waraniéné</a></li>
-            <li><a href="apropos.html" id="">A propos</a></li>
+            <li><a href="index.html" id="home">Accueil</a></li>
+            <li><a href="#rubriques" id="discover">Découvrir waraniéné</a></li>
+            <li><a href="apropos.html" id="about">A propos</a></li>
             <a class="btn btn-primary btn-register" href="#" role="button">Se connecter</a>
         </ul>
     </nav>    
@@ -203,7 +210,7 @@
 
 
 </body>
-
+<script src="https://unpkg.com/scrollreveal"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="./js/index.js"></script>
 <!--Bootstrap-->
@@ -213,6 +220,20 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
 integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
 crossorigin="anonymous"></script>
+
+<script>
+const loader = document.querySelector('.loader');
+window.addEventListener('load',() => {
+setTimeout(()=>{
+loader.classList.add('fondu-out');
+setTimeout(()=>{
+    loader.classList.add('hidden');
+    
+}, 700)//disparition
+
+}, 2000)//opacité reduite
+});
+</script>
 
 <script>
     $('.owl-carousel').owlCarousel({
