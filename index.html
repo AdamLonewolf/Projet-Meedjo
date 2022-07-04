@@ -26,8 +26,12 @@
 </head>
 <body>
     <!--Loader de la page-->
-
-
+    <div class="loader">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+     </div>
     <!--Header de la page (début)-->
 
     <header class="header">
@@ -279,6 +283,7 @@
 
 <script src="https://unpkg.com/scrollreveal"></script>
 <script src="./js/index.js"></script>
+<script src="./js/accueil.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <!--Bootstrap-->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
@@ -289,7 +294,23 @@ integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIUR
 crossorigin="anonymous"></script>
 
 <!--Loader-->
+
 <script>
+    const loader = document.querySelector('.loader');
+    window.addEventListener('load',() => {
+    setTimeout(()=>{
+    loader.classList.add('fondu-out');
+    setTimeout(()=>{
+        loader.classList.add('hidden');
+        
+    }, 700)//disparition
+    
+    }, 2000)//opacité reduite
+    });
+    </script>
+<script>
+
+    
     $('.owl-carousel').owlCarousel({
         loop: true,
         margin: 15,

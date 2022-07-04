@@ -9,7 +9,7 @@ const UpdateHeader = () => {
   
   window.addEventListener("scroll", UpdateHeader);
 
-  
+/*Animations*/  
 
   var BigTitle = {
     duration:2000,
@@ -55,7 +55,6 @@ const UpdateHeader = () => {
     distance:"70px",
     delay: 400,
   })
-
 
   sr.reveal(".wara-title", TitleArticle)
   sr.reveal(".banner-title", BigTitle)

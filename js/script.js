@@ -30,6 +30,7 @@ firebase
     connectMethod = "google";
     user = result.user;
     console.log(user)
+    localStorage.setItem("isLogIn", "true")
     window.location.href = "index.html";
 })
 .catch((error) => {
@@ -44,3 +45,5 @@ firebase
   }
 
   document.getElementById("google").addEventListener("click",seconnecter);
+
+  
